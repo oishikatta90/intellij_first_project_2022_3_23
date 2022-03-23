@@ -1,4 +1,4 @@
-package com.lhw.demo;
+package com.lhw.demo.user.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,6 @@ public class UserController {
     @RequestMapping("")
     @ResponseBody
     public String users() {
-        return "Hi222221sadsas112";
+        return "Hi22";
     }
 }
