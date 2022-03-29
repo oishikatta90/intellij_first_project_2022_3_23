@@ -1,5 +1,7 @@
 package com.lhw.demo.user.domain;
 
+import lombok.Getter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,13 +9,14 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long id;
-    public LocalDateTime reg_date;
-    public LocalDateTime update_date;
-    public String email;
-    public String password;
-    public String name;
+    private long id;
+    private LocalDateTime reg_date;
+    private LocalDateTime update_date;
+    private String email;
+    private String password;
+    private String name;
 }
